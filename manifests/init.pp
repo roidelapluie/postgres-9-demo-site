@@ -17,5 +17,9 @@ class site {
       hasstatus => true,
       enable    => false,
   }
+  package {
+    'rsync':
+      ensure => installed,
+  }
 
 }
